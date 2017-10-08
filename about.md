@@ -8,4 +8,4 @@ Deep learning student, marine mammal fan, and basic income advocate.
 
 ### More Information
 
-Experienced programmer with a Bachelor's in Computer Science and Minor in Mathematics.  Interested in transitioning back into the academic world.
+Experienced programmer with a Bachelor's in Computer Science and Minor in Mathematics; interested in transitioning back into the academic world.
