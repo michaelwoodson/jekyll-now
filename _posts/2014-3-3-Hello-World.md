@@ -6,6 +6,8 @@ title: Listening for Orcas with an LSTM
 
 ## Inspiration
 
+![Photo shared by Minette Layne]({{ site.baseurl }}/images/orca.jpg)
+
 After completing a course on Deep Learning I was anxious to find a data set to try out for my first project.  Recently Open AI demonstrated that sentiment could be detected by training a recurrent neural network (RNN) to make letter by letter predictions in a set of Amazon reviews.  The amazing thing about the research was that a single "neuron" was able to predict sentiment even though the model was trained on a data set that wasn't labeled.
 
 Another paper came out around the same time about WaveNet where the authors were able to train a network on a combination of conditioning and raw audio data to create state of the art speech synthesis.  That network used a CNN based architecture, but similar results were produced from RNNs in another project called Sample RNN.
