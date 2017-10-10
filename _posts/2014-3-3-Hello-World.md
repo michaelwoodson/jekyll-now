@@ -20,7 +20,7 @@ I scraped 200 mp3s from the website, all recorded in 2006.  The mp3s were conver
 
 ## Design
 
-The network feeds a window of 16 samples into an LSTM.  The LSTM output is stacked into with the raw input and fed into two fully connected layers.  The final output is mu law encoded as recommended in the WaveNet paper so training on the next sample can be done via softmax cross entropy.
+The network feeds a window of 16 samples into an LSTM.  The LSTM output is stacked with the raw input and fed into two fully connected layers.  The final output is mu law encoded as recommended in the WaveNet paper so training on the next sample can be done via softmax cross entropy.
 
 ## Training
 
@@ -30,7 +30,14 @@ For a baseline, the LSTM was ommitted and only two fully connected layers were u
 
 ## Results
 
+# Notes
+
+* Tried a multiplicative LSTM like in the Open AI paper and also tried the TensorFlow layer normalization implementation.  In practice those cells performance was too slow compared to the optimized BlockLSTMCell to provide any benefit.  It would be nice if BlockLSTMCell included those options.
+* Using more than 1 layer of LSTM (per timestep) with MultiRNNCell performed very poorly.  Perhaps I made a mistake passing the states between mini-batches.  The Sample RNN paper suggested that a 2 layer RNN should have comparable performance.
+
 ## Next Steps
+
+
 
 ## References
 1. [Unsupervised Sentiment Neuron](https://blog.openai.com/unsupervised-sentiment-neuron/) - Neat project that found a sentiment "neuron" in an RNN.
