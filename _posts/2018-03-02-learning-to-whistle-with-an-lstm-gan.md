@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 
 ![GAN LSTM generated orca whistle]({{"/images/generated-whistle.png" | asset_url}})
 
-For my first deep learning project, I tried pumping raw audio into an LSTM and looked for neurons that matched Orca whistles.  For my next project I wanted to try using a GAN architecture and spectrograms to find stronger abstractions.
+For my first deep learning project, I tried pumping raw audio into an LSTM and looked for neurons that matched orca whistles.  For my next project I wanted to try using a GAN architecture and spectrograms to find stronger abstractions.
 
 <!--more-->
 
