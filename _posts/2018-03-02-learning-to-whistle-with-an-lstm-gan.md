@@ -65,7 +65,8 @@ I'm currently debating what to do for my next deep learning project.  I'm most i
 3. [Vaquita CPR](https://www.vaquitacpr.org/) - Efforts to save the dwindling vaquita porpoise population
 
 ## Source
-[scrygan] (https://github.com/michaelwoodson/scrygan)
+
+[scrygan](https://github.com/michaelwoodson/scrygan)
 
 ## More generated samples
 

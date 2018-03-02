@@ -53,4 +53,4 @@ I'm going to try a new model that will allow the RNN to have a stronger abstract
 5. [Orchive](http://orchive.cs.uvic.ca/) - Huge data set of raw audio recordings from orca whales.
 
 ## Source
-[scrynet] (https://github.com/michaelwoodson/scrynet)
+[scrynet](https://github.com/michaelwoodson/scrynet)
