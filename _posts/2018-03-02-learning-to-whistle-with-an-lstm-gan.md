@@ -26,15 +26,15 @@ The GAN implementation is modified to incorporate recurrent networks.  For the g
 
 ## Training
 
-Training of the network is done by sampling random series of spectrograms from the raw data and repeating the standard GAN training for the sequence of data.  So the generator only has its LSTM to remember what it previously generated and the discriminator repeatedly guesses based on what it sees and the state of its separate LSTM.  (An alternative LSTM GAN architecture feeds a series of data to both the generator and discriminator so the generator bases its image on real data.)
+Training of the network is done by sampling random series of spectrograms from the raw data and repeating the standard GAN training for the sequence of data.  So the generator only has its LSTM to remember what it previously generated and the discriminator repeatedly guesses based on what it sees and the state of its separate LSTM.
 
 ![Sample of raw training data]({{"/images/scrygan-training-sample.png" | asset_url}})
 
-This sample shows what the raw data looks like.
+This sample shows what the training data looks like.
 
 ## Results
 
-The generator was able to create decent sprectrograms that matched high level abstractions.  Inspecting the generated samples reveals the generator creating orca whistles, human speech, white noise, and other patterns matching the raw data.  One limitation is that the generated image creates the whistles in the same location repeatedly and only made slight variations in shape.  I'm not sure if this is inherent in the nature of convolutional networks or indicates a flaw in the implementation.
+The generator was able to create decent sprectrograms that matched high level abstractions.  Inspecting the generated samples reveals the generator creating orca whistles, human speech, white noise, and other patterns matching the training data.  One limitation is that the generated image creates the whistles in the same location repeatedly and only made slight variations in shape.  I'm not sure if this is inherent in the nature of convolutional networks or indicates a flaw in the implementation.
 
 ![Generated spectrogram sample]({{"/images/scrygan-generator-7740.png" | asset_url}})
 
@@ -46,9 +46,11 @@ A pattern in the generator was human speech appearing to change to orca whistles
 
 ![Human to orca 3]({{"/images/scrygan-human-to-orca-3.png" | asset_url}})
 
+Samples of human speech giving way to whistles.
+
 ## Applications
 
-It has been shown that machine learning techniques can be used to classify high level behavior patterns in marine mammals.  Perhaps a network could be built to detect distressed marine mammals. Given that so many marine mammals are endangered, detecting marine mammals that need help could be an important step to help prevent extinction.  For example the vaquita porpoise has a dwindling population with perhaps less than 20 left, and other species of marine mammals are endangered all over the world.
+It has been shown that machine learning techniques can be used to classify high level behavior patterns in marine mammals.  Perhaps a network could be built to detect distressed marine mammals. Given that so many marine mammals are endangered, detecting marine mammals that need help could be an important step to help prevent extinction.  For example the vaquita porpoise has a dwindling population with perhaps less than 30 left, and other species of marine mammals are endangered all over the world.
 
 Note that going from generated spectrograms back to audio probably wouldn't create great results, the best potential is using the discriminator to create something like embeddings of raw audio and finding applications from that.
 
@@ -59,8 +61,11 @@ I'm currently debating what to do for my next deep learning project.  I'm most i
 ## References/further reading
 
 1. [The behavioral context of common dolphin (Delphinus sp.) vocalizations](onlinelibrary.wiley.com/doi/10.1111/j.1748-7692.2011.00498.x/abstract) - Paper showing how machine learning techniques can classify marine mammal behavior
-2. [DCGAN and spectrograms](http://deepsound.io/dcgan_spectrograms.html) Deepsound post about using DCGAN to create spectrograms
-3. [Vaquita CPR](https://www.vaquitacpr.org/) Efforts to save the dwindling vaquita porpoise population
+2. [DCGAN and spectrograms](http://deepsound.io/dcgan_spectrograms.html) - Deepsound post about using DCGAN to create spectrograms
+3. [Vaquita CPR](https://www.vaquitacpr.org/) - Efforts to save the dwindling vaquita porpoise population
+
+## Source
+[scrygan] (https://github.com/michaelwoodson/scrygan)
 
 ## More generated samples
 

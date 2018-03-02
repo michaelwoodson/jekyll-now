@@ -45,8 +45,12 @@ There is definitely potential to improve this model.  I spent about a week tunin
 I'm going to try a new model that will allow the RNN to have a stronger abstraction.  Instead of working on raw audio, the next model will feed a spectrogram into a GAN with an RNN acting as a sort of embedding for a CNN based generator/discriminator.
 
 ## References
+
 1. [Unsupervised Sentiment Neuron](https://blog.openai.com/unsupervised-sentiment-neuron/) - Open AI project that found a sentiment "neuron" in an RNN.
 2. [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) Andrej Karpathy's post with great visualizations of the internals of RNNs.
 3. [WaveNet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/) - State of the art voice results and nice music made by processing raw audio.
 4. [Sample RNN](https://github.com/soroushmehr/sampleRNN_ICLR2017) - Similar results to WaveNet using RNNs.
 5. [Orchive](http://orchive.cs.uvic.ca/) - Huge data set of raw audio recordings from orca whales.
+
+## Source
+[scrynet] (https://github.com/michaelwoodson/scrynet)

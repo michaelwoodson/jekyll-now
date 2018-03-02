@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Deep learning student, marine mammal fan and basic income advocate.
+Deep learning hobbiest, marine mammal fan and basic income advocate.
 
 ### More Information
 
