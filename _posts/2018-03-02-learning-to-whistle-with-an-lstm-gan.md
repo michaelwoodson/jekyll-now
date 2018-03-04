@@ -68,14 +68,3 @@ I'm currently debating what to do for my next deep learning project.  I'm most i
 
 [scrygan](https://github.com/michaelwoodson/scrygan)
 
-## More generated samples
-
-![Generated spectrogram sample]({{"/images/scrygan-generator-3110.png" | asset_url}})
-![Generated spectrogram sample]({{"/images/scrygan-generator-4230.png" | asset_url}})
-![Generated spectrogram sample]({{"/images/scrygan-generator-4430.png" | asset_url}})
-![Generated spectrogram sample]({{"/images/scrygan-generator-5500.png" | asset_url}})
-![Generated spectrogram sample]({{"/images/scrygan-generator-7740.png" | asset_url}})
-![Generated spectrogram sample]({{"/images/scrygan-generator-7990.png" | asset_url}})
-![Generated spectrogram sample]({{"/images/scrygan-generator-8420.png" | asset_url}})
-![Generated spectrogram sample]({{"/images/scrygan-generator-9560.png" | asset_url}})
-![Generated spectrogram sample]({{"/images/scrygan-generator-9570.png" | asset_url}})
